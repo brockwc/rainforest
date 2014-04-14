@@ -1,0 +1,13 @@
+<h1>Rainforest</h1>
+
+<h2>All Products</h2>
+
+<%= link_to "Add New", "/products/new" %>
+ 
+<% @products.each do |product| %>
+<hr>
+  <p>Product Name: <h3><%= product[:name] %></h3></p>
+  <p>Description: <%= product[:description] %></p>
+  <p>Price: <%= product[:price_in_cents] %></p>
+<hr>
+<% end %>
