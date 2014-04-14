@@ -8,6 +8,6 @@
 <hr>
   <p>Product Name: <h3><%= product[:name] %></h3></p>
   <p>Description: <%= product[:description] %></p>
-  <p>Price: <%= product[:price_in_cents] %></p>
+  <p>$<%= product.formatted_price %></p>
 <hr>
 <% end %>
